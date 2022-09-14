@@ -1,11 +1,6 @@
 name: Package
 on:
   workflow_dispatch: {}
-  push:
-    tags:
-      - v*
-  schedule:
-    - cron: 0 12 * * 0,3
 jobs:
   linux-build:
     runs-on: ubuntu-latest
